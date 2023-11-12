@@ -1,0 +1,36 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Domain\File\Entities\" />
+      <Folder Include="Domain\File\Exceptions\" />
+      <Folder Include="Domain\File\Services\" />
+      <Folder Include="Domain\File\ValueObjects\" />
+      <Folder Include="Domain\Folder\Entities\" />
+      <Folder Include="Domain\Folder\Exceptions\" />
+      <Folder Include="Domain\Folder\Services\" />
+      <Folder Include="Domain\Folder\ValueObjects\" />
+      <Folder Include="Domain\Space\Exceptions\" />
+      <Folder Include="Domain\Space\Services\" />
+      <Folder Include="Drivens\AuditService\" />
+      <Folder Include="Drivens\AuthService\" />
+      <Folder Include="Drivens\EventStore\" />
+      <Folder Include="Drivens\ReadDb\ReadModels\" />
+      <Folder Include="Drivings\Common\Exceptions\" />
+      <Folder Include="Drivings\Common\Models\" />
+      <Folder Include="Drivings\Common\Pipelines\" />
+      <Folder Include="Drivings\File\V1\" />
+      <Folder Include="Drivings\Folder\V1\" />
+      <Folder Include="Drivings\Space\V1\" />
+    </ItemGroup>
+
+</Project>
