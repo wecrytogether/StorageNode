@@ -2,11 +2,22 @@
 
 namespace Application.Domain.Common.Entities;
 
-public abstract class BaseEntity<TId> where TId : BaseId
+public abstract class BaseEntity
 {
-    public TId Id { get; protected init; } = (TId)Activator.CreateInstance(typeof(TId), new object[] { Guid.NewGuid() })!;
+    public List<string> Original { protected get; init; }
+    
+    public List<string> Changes { protected get; init; }
+    
+    public List<string> Current { protected get; init; }
     
     public DateTime CreatedAt { get; protected init; } = DateTime.Now;
     
-    public DateTime? LatestUpdatedAt { get; protected set; }
+    public DateTime? LastUpdatedAt { get; protected set; }
+}
+
+public abstract class BaseEntity<TId> 
+    : BaseEntity 
+    where TId : BaseId
+{
+    public TId Id { get; } = (TId)Activator.CreateInstance(typeof(TId), new object[] { Guid.NewGuid() })!;
 }

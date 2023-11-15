@@ -19,18 +19,16 @@
       <Folder Include="Domain\Folder\Exceptions\" />
       <Folder Include="Domain\Folder\Services\" />
       <Folder Include="Domain\Folder\ValueObjects\" />
-      <Folder Include="Domain\Space\Exceptions\" />
-      <Folder Include="Domain\Space\Services\" />
       <Folder Include="Drivens\AuditService\" />
-      <Folder Include="Drivens\AuthService\" />
-      <Folder Include="Drivens\EventStore\" />
-      <Folder Include="Drivens\ReadDb\ReadModels\" />
       <Folder Include="Drivings\Common\Exceptions\" />
       <Folder Include="Drivings\Common\Models\" />
       <Folder Include="Drivings\Common\Pipelines\" />
-      <Folder Include="Drivings\File\V1\" />
-      <Folder Include="Drivings\Folder\V1\" />
-      <Folder Include="Drivings\Space\V1\" />
+      <Folder Include="Drivings\File\V1\Dtos\" />
+      <Folder Include="Drivings\File\V1\UseCases\" />
+      <Folder Include="Drivings\Folder\V1\Dtos\" />
+      <Folder Include="Drivings\Folder\V1\UseCases\" />
+      <Folder Include="Drivings\Space\V1\Dtos\" />
+      <Folder Include="Drivings\Space\V1\UseCases\" />
     </ItemGroup>
 
 </Project>

@@ -3,7 +3,7 @@ using Application.Domain.Space.ValueObjects;
 
 namespace Application.Domain.Space.Events;
 
-public record PersonalSpaceCreated(
+public record SharedSpaceCreated(
     SpaceId Id,
     UserId OwnerUserId,
     SpaceName Name,

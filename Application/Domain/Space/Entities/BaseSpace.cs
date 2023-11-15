@@ -1,13 +1,13 @@
 ﻿using Application.Domain.Common.Entities;
 using Application.Domain.Common.ValueObjects;
-using Application.Domain.Space.Events;
 using Application.Domain.Space.ValueObjects;
 
 namespace Application.Domain.Space.Entities;
 
-public abstract class BaseSpace : BaseAggregate<SpaceId>
+public abstract class BaseSpace : BaseEntity<SpaceId>
 {
-    public UserId OwnerUserId { get; set; }
+    // Id of User who created this Space
+    public UserId OwnerUserId { get; }
     
     public SpaceType Type { get; }
     
@@ -19,8 +19,5 @@ public abstract class BaseSpace : BaseAggregate<SpaceId>
         Type = type;
         Name = name;
         CreatedAt = DateTime.Now;
-
-        // TODO add to event store
-        var e = new PersonalSpaceCreated(Id, Name, CreatedAt);
     }
 }
